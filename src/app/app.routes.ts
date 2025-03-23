@@ -3,6 +3,7 @@ import { PessoaListagemComponent } from './pages/pessoa-listagem/pessoa-listagem
 import { PessoaFormComponent } from './pages/pessoa-form/pessoa-form.component';
 import { PessoaLoginComponent } from './pages/pessoa-login/pessoa-login.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ProdutoFormComponent } from './pages/produto-form/produto-form.component';
 
 export const routes: Routes = [
     {
@@ -29,5 +30,10 @@ export const routes: Routes = [
         path: 'pessoas/login',
         component: PessoaLoginComponent,
         title: 'Login',
+    },
+    {
+        path: 'produtos/inserir',
+        component: ProdutoFormComponent,
+        title: 'Produtos - inserir',
     },
 ];
