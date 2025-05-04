@@ -24,5 +24,18 @@
         }
     </mat-form-field>
 
+    <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Quantidade</mat-label>
+        <input matInput type="number" formControlName="quantidade" placeholder="Ex: 10">
+        @if (formulario.get('quantidade')?.hasError('required')) {
+            <mat-error>Quantidade é obrigatória</mat-error>
+        }
+        @if (formulario.get('quantidade')?.hasError('min')) {
+            <mat-error>Mínimo de 1 unidade</mat-error>
+        }
+    </mat-form-field>
+
+
+
     <button mat-raised-button color="primary" type="submit" [disabled]="formulario.invalid">Enviar</button>
 </form>
