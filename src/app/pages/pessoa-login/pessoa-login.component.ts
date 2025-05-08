@@ -22,7 +22,7 @@ export class PessoaLoginComponent {
 
     if(this.login.trim() !== '' && this.senha.trim() !== ''){
       
-      if(this.login == 'admin' && this.senha == '123'){
+      if(this.login == 'loginadmin' && this.senha == 'admin'){
         alert(`Bem-vindo ${this.login} !`)
         this.router.navigate(['/pessoas'])
       }else{

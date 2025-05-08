@@ -2,7 +2,7 @@
     <!-- Home -->
     <button mat-button class="logo-button" routerLink="/">
         <mat-icon fontIcon="home"></mat-icon>
-        <span>Olá Mundo</span>
+        <span>Home</span>
     </button>
 
     <!-- Espaçador -->
@@ -13,16 +13,18 @@
 
     <mat-menu #cadastros="matMenu">
         <button mat-menu-item>
-            <mat-icon>people</mat-icon>
-            <span routerLink="/pessoas/inserir">Pessoas</span>
+            <mat-icon routerLink="pessoas/incluir">people</mat-icon>
+            <span routerLink="pessoas/incluir">Pessoas</span>
         </button>
         <button mat-menu-item >
-            <mat-icon>add_circle</mat-icon>
-            <span routerLink="/produtos/inserir">Produtos</span>
+            <mat-icon routerLink="produtos/inserir">add_circle</mat-icon>
+            <span routerLink="produtos/inserir">Produtos</span>
         </button>
+        
+        
     </mat-menu>
 
-    <button mat-raised-button routerLink="/pessoas/login">Login</button>
+    <button mat-raised-button routerLink="pessoas/login">Login</button>
 
     <!-- Menu que abre opções -->
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">

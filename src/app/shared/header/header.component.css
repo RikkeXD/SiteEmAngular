@@ -1,6 +1,10 @@
 .mat-toolbar{
     margin-bottom: 10px;
+    background-color: #788199;
+    color: white;
+    margin-bottom: 10px;
 }
+
 
 .spacer {
     /* ocupa o espaço restante na toolbar disponível */

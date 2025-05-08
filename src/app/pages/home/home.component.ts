@@ -9,5 +9,5 @@ import { CardItemComponent } from '../../shared/card-item/card-item.component';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  titulo:string="Bem-vindos!";
+  titulo:string="Bem-vindos a IJPV CAR!";
 }

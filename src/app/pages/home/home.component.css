@@ -1,9 +1,10 @@
 .content-container {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     width: 80%;
     margin-left: 128px;
-    text-align: left;
+    text-align: center;
+    
 }
 
 h1 {
@@ -11,10 +12,9 @@ h1 {
 }
 
 .card-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
+    gap: 16px; /* espaço entre linhas e colunas */
     margin-bottom: 40px;
 }
 
