@@ -1,9 +1,8 @@
 import { Routes } from '@angular/router';
-import { PessoaListagemComponent } from './pages/pessoa-listagem/pessoa-listagem.component';
-import { PessoaFormComponent } from './pages/pessoa-form/pessoa-form.component';
-import { PessoaLoginComponent } from './pages/pessoa-login/pessoa-login.component';
+import { CarroListagemComponent } from './pages/carro-listagem/carro-listagem.component';
+import { CarroFormComponent } from './pages/carro-form/carro-form.component';
+import { CarroLoginComponent } from './pages/carro-login/carro-login.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProdutoFormComponent } from './pages/produto-form/produto-form.component';
 
 export const routes: Routes = [
     {
@@ -12,28 +11,23 @@ export const routes: Routes = [
         title: 'Home',
     },
     {
-        path: 'pessoas',
-        component: PessoaListagemComponent,
-        title: 'Pessoas',
+        path: 'carros',
+        component: CarroListagemComponent,
+        title: 'Carros',
     },
     {
-        path: 'pessoas/incluir',
-        component: PessoaFormComponent,
-        title: 'Pessoas - Incluir',
+        path: 'carros/incluir',
+        component: CarroFormComponent,
+        title: 'Carros - Incluir',
     },
     {
-        path: 'pessoas/alterar/:id',
-        component: PessoaFormComponent,
-        title: 'Pessoas - Alterar',
+        path: 'carros/alterar/:id',
+        component: CarroFormComponent,
+        title: 'Carros - Alterar',
     },
     {
-        path: 'pessoas/login',
-        component: PessoaLoginComponent,
+        path: 'carros/login',
+        component: CarroLoginComponent,
         title: 'Login',
-    },
-    {
-        path: 'produtos/inserir',
-        component: ProdutoFormComponent,
-        title: 'Produtos - inserir',
     },
 ];

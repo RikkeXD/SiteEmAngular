@@ -3,13 +3,13 @@ import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-pessoa-login',
+  selector: 'app-carro-login',
   standalone: true,
   imports: [FormsModule],
-  templateUrl: './pessoa-login.component.html',
-  styleUrl: './pessoa-login.component.css'
+  templateUrl: './carro-login.component.html',
+  styleUrl: './carro-login.component.css'
 })
-export class PessoaLoginComponent {
+export class CarroLoginComponent {
 
   titulo = 'Faça seu Login!'
   login = ''

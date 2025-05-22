@@ -1,15 +1,13 @@
 <div class="content-container">
+    @if(modal){
+        <app-modal [carro]="comprarCarro" (close)="fecharModal()"></app-modal>
+    }
     <h1>{{ titulo }}</h1>
 
     <div class="card-wrapper">
-        <app-card-item [imageUrl]="'assets/images/a3.png'"></app-card-item>
-        <app-card-item [imageUrl]="'assets/images/rs4.png'"></app-card-item>
-        <app-card-item [imageUrl]="'assets/images/a4.png'"></app-card-item>
-        <app-card-item [imageUrl]="'assets/images/911.png'"></app-card-item>
-        <app-card-item [imageUrl]="'assets/images/gli.png'"></app-card-item>
-        <app-card-item [imageUrl]="'assets/images/i30.png'"></app-card-item>
-        <app-card-item [imageUrl]="'assets/images/tiggo8.png'"></app-card-item>
-        <app-card-item [imageUrl]="'assets/images/mercedes.png'"></app-card-item>
+        @for(carro of carros; track $index){
+            <app-card-item [carro]="carro" (abrirModal)="comprar($event)"/>
+        }
     </div>
     
 </div>

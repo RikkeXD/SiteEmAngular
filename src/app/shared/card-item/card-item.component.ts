@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, Input, output } from '@angular/core';
 import {MatButtonModule } from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { ICarro } from '../../core/services/interface/ICarro';
 
 @Component({
   selector: 'app-card-item',
@@ -10,5 +11,13 @@ import {MatCardModule} from '@angular/material/card';
   styleUrl: './card-item.component.css'
 })
 export class CardItemComponent {
-  @Input() imageUrl: string = '';
+  carro = input.required<ICarro>()
+  abrirModal = output<ICarro>()
+
+  ngOnInit(){
+  }
+
+  comprar(){
+    this.abrirModal.emit(this.carro())
+  }
 }
